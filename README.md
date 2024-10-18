@@ -28,7 +28,7 @@ public DbSet<Movie> Movies => Set<Movie>();
 - Context içerisinde DbSet tanımladım ve OnModelCreating ile tablo özelliklerini tanımladım (Movies, Games)
 public DbSet<Game> Games => Set<Game>();
 public DbSet<Movie> Movies => Set<Movie>();
-### **3 büyükleri =>**
+### **3 büyükler =>**
 1. context içerisinde constructor oluşturdum.
 2. appsettings.json => appsettings.Development => ConnectionString tanımladım.
 3. program.cs => GetConnectionString ile 2.adımda oluşturulan connectionstring i aldım ve builder.Services.AddDbContext ile bunları bağladım.
