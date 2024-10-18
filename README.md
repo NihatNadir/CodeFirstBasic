@@ -9,9 +9,9 @@
 public DbSet<Game> Games => Set<Game>();
 public DbSet<Movie> Movies => Set<Movie>();
 - The big three steps =>
-1- Created a constructor inside the context.
-2- In appsettings.json and appsettings.Development, I defined the ConnectionString.
-3- In Program.cs, I retrieved the connection string created in step 2 with GetConnectionString and connected them using builder.Services.AddDbContext.
+1. Created a constructor inside the context.
+2. In appsettings.json and appsettings.Development, I defined the ConnectionString.
+3. In Program.cs, I retrieved the connection string created in step 2 with GetConnectionString and connected them using builder.Services.AddDbContext.
 - Ran the Add-Migration and Update-Database commands.
 - In the controller, I created a copy of the context. (private readonly PatikaFirstDbContext _context;)
 - Injected the context into the controller using Dependency Injection.
@@ -28,9 +28,9 @@ public DbSet<Movie> Movies => Set<Movie>();
 public DbSet<Game> Games => Set<Game>();
 public DbSet<Movie> Movies => Set<Movie>();
 - 3 büyükleri =>
-- 1- context içerisinde constructor oluşturdum.
-- 2- appsettings.json => appsettings.Development => ConnectionString tanımladım.
-- 3- program.cs => GetConnectionString ile 2.adımda oluşturulan connectionstring i aldım ve builder.Services.AddDbContext ile bunları bağladım.
+1. context içerisinde constructor oluşturdum.
+2. appsettings.json => appsettings.Development => ConnectionString tanımladım.
+3. program.cs => GetConnectionString ile 2.adımda oluşturulan connectionstring i aldım ve builder.Services.AddDbContext ile bunları bağladım.
 - Add-migration ve Update-database komutlarını çalıştırdım.
 - Controller'da kopya bir _context oluşturdum. (private readonly PatikaFirstDbContext _context;)
 - Controller'da Dependency Injection ile context aldım.
