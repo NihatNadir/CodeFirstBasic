@@ -8,7 +8,7 @@
 - Inside the context, I defined DbSet and used OnModelCreating to configure the table properties (e.g., Movies, Games).
 public DbSet<Game> Games => Set<Game>();
 public DbSet<Movie> Movies => Set<Movie>();
-- The big three steps =>
+- ** The big three steps => **
 1. Created a constructor inside the context.
 2. In appsettings.json and appsettings.Development, I defined the ConnectionString.
 3. In Program.cs, I retrieved the connection string created in step 2 with GetConnectionString and connected them using builder.Services.AddDbContext.
@@ -27,7 +27,7 @@ public DbSet<Movie> Movies => Set<Movie>();
 - Context içerisinde DbSet tanımladım ve OnModelCreating ile tablo özelliklerini tanımladım (Movies, Games)
 public DbSet<Game> Games => Set<Game>();
 public DbSet<Movie> Movies => Set<Movie>();
-- 3 büyükleri =>
+- ** 3 büyükleri => **
 1. context içerisinde constructor oluşturdum.
 2. appsettings.json => appsettings.Development => ConnectionString tanımladım.
 3. program.cs => GetConnectionString ile 2.adımda oluşturulan connectionstring i aldım ve builder.Services.AddDbContext ile bunları bağladım.
