@@ -1,4 +1,4 @@
-using CodeFirstBasic.Data;
+using CodeFirstBasic.Context;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

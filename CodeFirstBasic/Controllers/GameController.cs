@@ -1,4 +1,4 @@
-﻿using CodeFirstBasic.Data;
+﻿using CodeFirstBasic.Context;
 using CodeFirstBasic.Data.Entities;
 using Microsoft.AspNetCore.Mvc;
 
