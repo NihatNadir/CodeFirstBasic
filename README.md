@@ -9,9 +9,9 @@
 public DbSet<Game> Games => Set<Game>();
 public DbSet<Movie> Movies => Set<Movie>();
 - The big three steps =>
-- 1- Created a constructor inside the context.
-- 2- In appsettings.json and appsettings.Development, I defined the ConnectionString.
-- 3- In Program.cs, I retrieved the connection string created in step 2 with GetConnectionString and connected them using builder.Services.AddDbContext.
+1- Created a constructor inside the context.
+2- In appsettings.json and appsettings.Development, I defined the ConnectionString.
+3- In Program.cs, I retrieved the connection string created in step 2 with GetConnectionString and connected them using builder.Services.AddDbContext.
 - Ran the Add-Migration and Update-Database commands.
 - In the controller, I created a copy of the context. (private readonly PatikaFirstDbContext _context;)
 - Injected the context into the controller using Dependency Injection.
